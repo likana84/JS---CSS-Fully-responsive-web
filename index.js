@@ -9,8 +9,36 @@ State the reasons for reviewing the website.
 Explain how to source and import placeholder contents.
 Recall how to import and implement fonts on the website.
 */
+const headerEl=document.querySelector(".header");
 const barMenuEl=document.querySelector(".barMenu");
 const navLinksEl=document.querySelector(".nav-links");
+
+// Header Animation - Fade In
+function animateHeaderFadeIn() {
+    headerEl.style.opacity = '0';
+    headerEl.style.transform = 'translateY(-20px)';
+    headerEl.style.transition = 'all 0.8s ease-in-out';
+    
+    // Trigger animation
+    setTimeout(() => {
+        headerEl.style.opacity = '1';
+        headerEl.style.transform = 'translateY(0)';
+    }, 100);
+}
+
+// Header Animation - Scroll Effect
+window.addEventListener('scroll', () => {
+    const scrollPosition = window.scrollY;
+    if (headerEl) {
+        // Slight scale effect on scroll
+        const scale = 1 - (scrollPosition * 0.0002);
+        headerEl.style.transform = `scaleY(${Math.max(scale, 0.95)})`;
+    }
+});
+
+// Initialize header animation on page load
+document.addEventListener('DOMContentLoaded', animateHeaderFadeIn);
+
 barMenuEl.addEventListener("click",(e)=>{
     console.log(navLinksEl.style.display=='none');
     if(navLinksEl.style.display=='block'){
@@ -27,6 +55,7 @@ window.onresize=function(e){
 
 
 
-console.dir(document)
+/*console.dir(document)
 console.dir(barMenuEl);
-console.dir(navLinksEl);
+console.dir(navLinksEl);*/
+
