@@ -57,5 +57,13 @@ window.onresize=function(e){
 
 /*console.dir(document)
 console.dir(barMenuEl);
-console.dir(navLinksEl);*/
+console.dir(navLinksEl);
+let title = " Welcome to My Page ";
+let i = 0;
 
+function animateTitle() {
+  document.title = title.substring(i) + title.substring(0, i);
+  i = (i + 1) % title.length;
+}
+
+setInterval(animateTitle, 200); // speed in ms*/
