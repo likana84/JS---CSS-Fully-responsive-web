@@ -2,8 +2,12 @@
     box-sizing: border-box;
     
 }
-
-
+.animate{
+    font-size: 1.7em;
+    font-weight: bold;
+    color:blue;
+ }
+    
 .navbar {
     position:relative;
     width: 100%;
@@ -53,6 +57,22 @@
     
 } 
 
+@keyframes  animate{
+    0%{
+        left:0%;
+    }
+    75%{
+        left:75%;
+    }
+    100%{
+        left:0%;
+    }
+}
+.animate{
+    position:relative;
+    animation: animate 10s linear infinite;
+}
+
 .barMenu{
     display:none;
     float: left;
@@ -82,7 +102,7 @@
     text-transform: lowercase;
 }
 
-.col h2 {
+.col h1 {
     text-align: center;
     background-color: hotpink;
     padding: 20px;
@@ -165,6 +185,8 @@
 
 .thumbNail{
     width: 100%;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 1em;
 }
 .content{
 padding: 7px;
