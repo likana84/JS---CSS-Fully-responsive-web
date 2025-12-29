@@ -2,6 +2,10 @@
     box-sizing: border-box;
     
 }
+div p{
+    font-family: Arial, sans-serif;
+    font-variant:normal;
+}
 .animate{
     font-size: 1.7em;
     font-weight: bold;
@@ -90,7 +94,7 @@
     padding: 40px;
     font-size: 2em;
 }
-.col{
+.col {
     float: left;
     width: 100%;
     padding: 15px;
@@ -99,7 +103,8 @@
     background-color: white;
     border: 1px solid white;
     min-height: 400px;
-    text-transform: lowercase;
+    
+    
 }
 
 .col h1 {
@@ -118,7 +123,7 @@
     background-color: white;
     border: 1px solid white;
     min-height: 200px;
-    text-transform: lowercase;
+   
 }
 .col-2 h2 {
     text-align: center;
