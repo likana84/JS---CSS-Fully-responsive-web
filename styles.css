@@ -5,6 +5,19 @@
 .header-transport{
     margin-left:200px;
 }
+a:link{
+    color: purple;
+    text-decoration: none;
+    background-color: lightgrey;
+    padding:5px;
+    border-radius: 5px;;
+
+}
+a:hover{
+    background-color: lightyellow;
+    color: red;
+    text-decoration: underline;
+}
  
 
 .transport-container{
@@ -57,7 +70,7 @@ div p{
 }
 
 .nav-links li a {
-    color: white;
+    color: purple;
     text-decoration: none;
     display: block;
     text-transform: uppercase;
