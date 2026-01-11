@@ -119,6 +119,11 @@ div p{
     text-align: center;
     padding: 40px;
     font-size: 2em;
+
+}
+
+.text-center{
+    text-align: center;
 }
 .col {
     float: left;
@@ -184,7 +189,7 @@ div p{
     background-color: white;
     border: 1px solid white;
     min-height: 400px;
-    text-transform: lowercase;
+   
 
 }
 .col-4 h2 {
